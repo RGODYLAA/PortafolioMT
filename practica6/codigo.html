@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Práctica6</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="/Portafolio MT/CSS/navegacion.css">
+</head>
+<body>
+    <header>
+        <h1>Página Multimedia</h1>
+        <p>Audio, Video HTML5, YouTube, Twitter, Facebook y Google Maps</p>
+    </header>
+    
+    <main>
+        <!-- Video HTML5 -->
+        <h2>Video HTML5</h2>
+        <video controls>
+            <source src="f16.mp4" type="video/mp4">
+            Su navegador no soporta el elemento de video.
+        </video>
+        
+        <!-- Audio HTML5 -->
+        <h2>Audio HTML5</h2>
+        <audio controls>
+            <source src="donttalk.mp3" type="audio/mp3">
+            Su navegador no soporta el elemento de audio.
+        </audio>
+        
+        <!-- YouTube -->
+        <h2>Video de YouTube</h2>
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/baw8BMUArkk" 
+                    frameborder="0" 
+                    allowfullscreen></iframe>
+        </div>
+        
+        <!-- Twitter -->
+        <h2>Feed de Twitter/X</h2>
+        <div class="twitter-container" style="max-width: 560px; margin: 0 auto;">
+            <a class="twitter-timeline" 
+               data-width="560"
+               data-height="500" 
+               data-theme="light"
+               data-chrome="noheader nofooter"
+               href="https://twitter.com/elonmusk?ref_src=twsrc%5Etfw">
+                Tweets by Elon Musk
+            </a>
+        </div>
+        
+        <!-- Facebook -->
+        <h2>Feed de Facebook</h2>
+        <div class="facebook-container" style="max-width: 560px; margin: 0 auto;">
+            <div class="fb-page" 
+                 data-href="https://www.facebook.com/FacebookforDevelopers" 
+                 data-tabs="timeline" 
+                 data-width="560" 
+                 data-height="500"
+                 data-small-header="false"
+                 data-adapt-container-width="true"
+                 data-hide-cover="false"
+                 data-show-facepile="true">
+                 <blockquote cite="https://www.facebook.com/FacebookforDevelopers" class="fb-xfbml-parse-ignore">
+                    <a href="https://www.facebook.com/FacebookforDevelopers">Meta for Developers</a>
+                 </blockquote>
+            </div>
+        </div>
+        
+        
+        <h2>Google Maps (Embed)</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60252.31087470388!2d-99.18436775!3d19.3907195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f92aaefc2667%3A0xdbc4232a882edc37!2sCiudad%20de%20M%C3%A9xico!5e0!3m2!1ses!2smx!4v1695079200000!5m2!1ses!2smx" 
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </main>
+    
+    <div class="nav-practicas">
+        <a href="/Portafolio MT/practica5/p5.html">Práctica anterior</a>
+        <a href="/Portafolio MT/home/projects.html">Índice de proyectos</a>
+        <a href="/Portafolio MT/practica7/e.php">Siguiente práctica</a>
+    </div>
+    
+    
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" 
+            src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v19.0"></script>
+    
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</body>
+</html>

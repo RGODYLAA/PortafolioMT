@@ -1,0 +1,25 @@
+.nav-practicas {
+  display: flex;
+  justify-content: space-between;
+  max-width: 600px;  
+  margin: 30px auto 0;
+  gap: 15px; 
+}
+
+.nav-practicas a {
+  flex: 1;
+  text-align: center;
+  background-color: #111111;
+  color: #ffffff;
+  padding: 12px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.3s ease, transform 0.2s ease;
+  white-space: nowrap;  
+}
+
+.nav-practicas a:hover {
+  background-color: #333333;
+  transform: translateY(-2px);
+}

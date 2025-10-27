@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario a Tabla</title>
+  <link rel="stylesheet" href="p5.css">
+  <link rel="stylesheet" href="/Portafolio MT/CSS/navegacion.css">
+</head>
+<body>
+
+    <h1>Formulario</h1>
+
+  <form id="miFormulario">
+        <label>Nombre: <input type="text" id="nombre"></label><br><br>
+        <label>Correo: <input type="email" id="correo"></label><br><br>
+
+    <p>Intereses:</p>
+
+        <input type="checkbox" name="intereses" id="deporte" value="Deporte">
+        <label for="deporte">Deporte</label><br>
+
+        <input type="checkbox" name="intereses" id="arte" value="Arte">
+        <label for="arte">Arte</label><br>
+
+        <input type="checkbox" name="intereses" id="tecnologia" value="Tecnología">
+        <label for="tecnologia">Tecnología</label><br><br>
+
+
+    <p>Turno:</p>
+
+        <input type="radio" name="turno" id="manana" value="Mañana">
+        <label for="manana">Mañana</label><br>
+
+        <input type="radio" name="turno" id="tarde" value="Tarde">
+        <label for="tarde">Tarde</label><br>
+
+        <input type="radio" name="turno" id="noche" value="Noche">
+        <label for="noche">Noche</label><br><br>
+
+
+            <label>Fecha y hora: <input type="datetime-local" id="cita"></label><br><br>
+            <label>Color favorito: <input type="color" id="colorFav"></label><br><br>
+            <label>Nivel: <input type="range" id="nivel" min="1" max="10" value="5">
+            <span id="nivelValor">5</span></label><br><br>
+
+    <button type="button" onclick="agregarFila()">Agregar</button>
+  </form>
+
+  <p id="errores"></p>
+
+  <h2>Tabla</h2>
+  <table id="tablaDatos">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Correo</th>
+        <th>Intereses</th>
+        <th>Turno</th>
+        <th>Fecha</th>
+        <th>Color</th>
+        <th>Nivel</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <div class="nav-practicas">
+      <a href="/Portafolio MT/practica4/calificaciones.html">Práctica anterior</a>
+      <a href="/Portafolio MT/home/projects.html">Índice de proyectos</a>
+      <a href="/Portafolio MT/practica6/codigo.html">Siguiente práctica</a>
+  </div>
+
+  <script src="p5.js"></script>
+</body>
+</html>

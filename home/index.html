@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portafolio - Ricardo Godyla</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <!-- Header / Nav -->
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="index.html">Ricardo Godyla</a>
+      <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+      <ul class="nav-links">
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="projects.html">Proyectos</a></li>
+        <li><a href="#experience">Experiencia</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero" class="hero">
+    <div class="hero-inner">
+      <h2 class="hero-kicker">¡Bienvenido a mi Portafolio!</h2>
+      <h1 class="hero-title">Soy <span class="highlight">Ricardo Andrés Godyla</span></h1>
+      <p class="hero-subtitle">
+        Estudiante de <strong>Ingeniería en Sistemas y Tecnologías de la Información</strong> en la
+        <em>Universidad Anáhuac México</em>. Enfocado en <strong>ERP</strong>, 
+        <strong>bases de datos</strong>, <strong>automatización de procesos</strong> e
+        <strong>inteligencia artificial</strong>.
+      </p>
+      <a href="projects.html" class="btn">Explora mis proyectos</a>
+    </div>
+  </section>
+
+  <!-- Sobre mí -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">Sobre mí</h2>
+      <p class="section-text">
+         Estudiante de sexto semestre de la carrera “Ingeniería en Sistemas y Tecnologías de la Información” en
+ busca de aprender sobre el funcionamiento de los distintos sistemas y softwares corporativos ya sean
+ como producto o parte de la operación, así como sus distintas aplicaciones y optimización generales. A su
+ vez, con alto interés en la IA, su implementación a sistemas ya establecidos y automatización de procesos
+ Mis competencias tanto profesionales como personales, capacidad de resolución de problemas, atención
+ al detalle y alto interés por el tema e intriga por el funcionamiento de dichos sistemas hacen de mi un
+ candidato apasionado y comprometido con cualquier rol.
+      </p>
+    </div>
+  </section>
+
+  <!-- Habilidades -->
+  <section id="skills" class="section alt">
+    <div class="container">
+      <h2 class="section-title">Habilidades</h2>
+      <ul class="chips">
+        <li>ERP: Odoo 18 (XML, Python)</li>
+        <li>SQL y migración de datos</li>
+        <li>Python, BASIC, HTML</li>
+        <li>Excel avanzado (tablas dinámicas, macros)</li>
+        <li>Redes y administración</li>
+        <li>IA aplicada (ChatGPT, Claude)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Experiencia -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2 class="section-title">Experiencia</h2>
+
+      <div class="xp">
+        <h3>SCS BMS — Consultor <span class="dim">(Oct 2024 – Presente)</span></h3>
+        <ul class="list">
+          <li>Implementación y personalización de Odoo 18 para clientes.</li>
+          <li>Desarrollo en XML y Python; optimización de flujos.</li>
+          <li>Capacitaciones y demos para usuarios.</li>
+        </ul>
+      </div>
+
+      <div class="xp">
+        <h3>Universidad Anáhuac — Intern <span class="dim">(Ago 2022 – Presente)</span></h3>
+        <ul class="list">
+          <li>Gestión y actualización de bases de datos de investigadores.</li>
+          <li>Reportes internos para toma de decisiones.</li>
+          <li>Estandarización de procesos para mejor trazabilidad.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contact" class="section alt">
+    <div class="container">
+      <h2 class="section-title">Contacto</h2>
+      <div class="contact">
+        <p><strong>Correo:</strong> <a href="mailto:godylaricardo17@gmail.com">godylaricardo17@gmail.com</a></p>
+        <p><strong>Teléfono:</strong> <a href="tel:+525540180487">55-4018-0487</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>© 2025 Ricardo Godyla</p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+  </script>
+</body>
+</html>

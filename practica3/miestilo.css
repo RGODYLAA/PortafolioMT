@@ -1,0 +1,32 @@
+#Tabla2 {
+  margin: 24px auto;
+  border-collapse: collapse;
+  min-width: 720px;         
+  border: 2px solid #222;   
+  font-family: system-ui, Arial, sans-serif;
+}
+
+#Tabla2 th {
+  background: rgb(54, 60, 74);
+  color: #fff;
+  text-align: center;
+  padding: 10px 12px;
+  font-weight: 600;
+  border: 1px solid #222;   /* líneas entre th */
+}
+
+
+#Tabla2 td {
+  padding: 10px 12px;
+  text-align: center;
+  border: 1px solid #222;   /* líneas entre td */
+}
+
+
+#Tabla2 tr:nth-child(even) td {
+  background: #a8a8a8;
+}
+
+#Tabla2 tr:hover td {
+  background: #98a8ab;
+}

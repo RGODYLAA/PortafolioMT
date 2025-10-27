@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mini Conversor de Unidades</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/Portafolio MT/CSS/navegacion.css">
+
+</head>
+<body>
+  <main class="app">
+    <h1>Mini Conversor de Unidades</h1>
+
+    <section class="card">
+      <div class="row">
+        <label for="category">Categoría</label>
+        <select id="category">
+          <option value="temperature">Temperatura</option>
+          <option value="distance">Distancia</option>
+          <option value="time">Tiempo</option>
+          <option value="currency">Moneda</option>
+        </select>
+      </div>
+
+      <div class="grid">
+        <div class="col">
+          <label for="fromUnit">De</label>
+          <select id="fromUnit"></select>
+          <label for="fromValue">Valor origen</label>
+          <input id="fromValue" type="number" step="any" placeholder="Ingresa un valor">
+        </div>
+
+        <div class="mid">
+          <button id="swapBtn" title="Intercambiar unidades">⇄</button>
+        </div>
+
+        <div class="col">
+          <label for="toUnit">A</label>
+          <select id="toUnit"></select>
+          <label for="toValue">Valor convertido</label>
+          <input id="toValue" type="number" step="any" placeholder="Resultado" readonly>
+        </div>
+      </div>
+
+      <div class="row actions">
+        <button id="convertBtn">Convertir</button>
+        <span id="hint" class="hint">Enter también convierte</span>
+      </div>
+
+      <div id="result" class="result" aria-live="polite"></div>
+    </section>
+
+   
+  </main>
+
+  <div class="nav-practicas">
+        <a href="/Portafolio MT/practica7/e.php">Práctica anterior</a>
+        <a href="/Portafolio MT/home/projects.html">Índice de proyectos</a>
+    </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
